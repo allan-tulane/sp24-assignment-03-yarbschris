@@ -17,6 +17,8 @@ def MED(S, T):
             return(MED(S[1:], T[1:]))
         else:
             return(1 + min(MED(S, T[1:]), MED(S[1:], T)))
+        
+print(MED("elephant", "relevant"))
 
 
 def fast_MED(S, T, MED={}):
@@ -24,6 +26,5 @@ def fast_MED(S, T, MED={}):
     pass
 
 def fast_align_MED(S, T, MED={}):
-    # TODO - keep track of alignment
+    # TODO
     pass
-
